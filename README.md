@@ -57,3 +57,5 @@ Datele introduse de utilizator sunt păstrate doar în memoria paginii (nu se sa
 1. Se descarcă/clonează repository-ul.
 2. Se deschide fișierul `index.html` în browser (Chrome, Edge, Firefox etc.).
 3. Nu este nevoie de server sau baze de date – proiectul este 100% static.
+
+Modificare făcută de Denisa pentru testarea branch-ului.
