@@ -1,0 +1,265 @@
+/* Reset simplu */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+body {
+    background: #0f172a;
+    color: #e5e7eb;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header & nav */
+.top-bar {
+    background: #020617;
+    border-bottom: 1px solid #1f2937;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-bar h1 {
+    font-size: 1.5rem;
+}
+
+nav a {
+    margin-left: 1rem;
+    text-decoration: none;
+    color: #9ca3af;
+    padding: 0.25rem 0.5rem;
+    border-radius: 999px;
+    transition: background 0.2s, color 0.2s;
+}
+
+nav a:hover {
+    background: #111827;
+    color: #e5e7eb;
+}
+
+nav a.active {
+    background: #2563eb;
+    color: white;
+}
+
+/* Layout principal */
+main {
+    flex: 1;
+    padding: 1.5rem 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* Controale */
+.controls {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+}
+
+.control-group {
+    display: flex;
+    flex-direction: column;
+    min-width: 220px;
+}
+
+label {
+    margin-bottom: 0.25rem;
+    font-size: 0.9rem;
+    color: #9ca3af;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
+    border: 1px solid #374151;
+    background: #020617;
+    color: #e5e7eb;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 1px #2563eb55;
+}
+
+/* Conținut: listă + detalii */
+.content {
+    display: grid;
+    grid-template-columns: 2fr 1.3fr;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.movie-list-section,
+.movie-details-section,
+.add-movie-section {
+    background: #020617;
+    border-radius: 0.75rem;
+    padding: 1rem 1.25rem;
+    border: 1px solid #1f2937;
+}
+
+h2 {
+    margin-bottom: 0.75rem;
+    font-size: 1.2rem;
+}
+
+/* Lista de filme */
+.movie-list {
+    list-style: none;
+    max-height: 400px;
+    overflow-y: auto;
+    padding-right: 0.25rem;
+}
+
+.movie-item {
+    padding: 0.75rem;
+    margin-bottom: 0.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #1f2937;
+    cursor: pointer;
+    transition: background 0.15s, transform 0.1s, border-color 0.15s;
+}
+
+.movie-item:hover {
+    background: #111827;
+    transform: translateY(-1px);
+    border-color: #2563eb;
+}
+
+.movie-item-title {
+    font-weight: 600;
+}
+
+.movie-item-meta {
+    font-size: 0.85rem;
+    color: #9ca3af;
+    margin-top: 0.25rem;
+}
+
+/* Detalii film */
+.movie-details p {
+    margin-bottom: 0.5rem;
+}
+
+.movie-details .movie-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.1rem 0.45rem;
+    border-radius: 999px;
+    background: #111827;
+    font-size: 0.75rem;
+    margin-right: 0.3rem;
+}
+
+/* Formular adăugare film */
+.add-movie-section h2 {
+    margin-bottom: 0.75rem;
+}
+
+#addMovieForm {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 0.75rem 1.25rem;
+    margin-bottom: 0.5rem;
+}
+
+.form-row {
+    display: flex;
+    flex-direction: column;
+}
+
+button[type="submit"] {
+    grid-column: 1 / -1;
+    padding: 0.6rem 1.2rem;
+    border-radius: 999px;
+    border: none;
+    background: #2563eb;
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: background 0.15s, transform 0.1s, box-shadow 0.15s;
+}
+
+button[type="submit"]:hover {
+    background: #1d4ed8;
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.35);
+    transform: translateY(-1px);
+}
+
+button[type="submit"]:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+.note {
+    font-size: 0.8rem;
+    color: #9ca3af;
+}
+
+/* Pagina Despre */
+.about-page p,
+.about-page ul,
+.about-page ol {
+    margin-bottom: 0.75rem;
+}
+
+.about-page ul,
+.about-page ol {
+    padding-left: 1.5rem;
+}
+
+.about-page li {
+    margin-bottom: 0.25rem;
+}
+
+/* Scrollbar mic & discret */
+.movie-list::-webkit-scrollbar {
+    width: 6px;
+}
+.movie-list::-webkit-scrollbar-track {
+    background: #020617;
+}
+.movie-list::-webkit-scrollbar-thumb {
+    background: #374151;
+    border-radius: 999px;
+}
+
+/* Footer */
+footer {
+    padding: 0.75rem;
+    text-align: center;
+    font-size: 0.75rem;
+    color: #6b7280;
+    border-top: 1px solid #1f2937;
+    background: #020617;
+}
+
+/* Responsive */
+@media (max-width: 800px) {
+    main {
+        padding: 1rem;
+    }
+
+    .content {
+        grid-template-columns: 1fr;
+    }
+}
