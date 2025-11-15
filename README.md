@@ -29,6 +29,8 @@ Aplicația afișează o listă de filme predefinite și permite:
 
 Datele introduse de utilizator sunt păstrate doar în memoria paginii (nu se salvează în baza de date sau fișiere).
 
+Modificare făcută de membrul 4.ALexandrescu Beatrice
+
 ---
 
 ## 3. Tehnologii utilizate
