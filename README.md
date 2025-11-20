@@ -1,10 +1,7 @@
 # Echipa-7-3IE2025
 # Agenda mea de filme 🎬
 
-Proiect realizat pentru disciplina Rețele / Programare Internet (UVT).  
-Aplicația este un **site web static** care permite gestionarea unei mici agende de filme:
-vizualizare, căutare, filtrare după gen și adăugare de filme noi (în memoria paginii).
-
+Acest proiect a fost realizat în cadrul disciplinei Rețele / Programare Internet din cadrul UVT. Aplicația reprezintă un site web static creat pentru gestionarea unei mici agende de filme. Utilizatorul poate vizualiza o listă de filme existente și poate căuta rapid un titlu în funcție de nume. De asemenea, aplicația permite filtrarea filmelor după gen, astfel încât navigarea să fie mai simplă și mai eficientă. În plus, pot fi adăugate filme noi, care sunt păstrate temporar în memoria paginii pe durata sesiunii. Proiectul ilustrează modul în care elementele de bază ale dezvoltării web – HTML, CSS și JavaScript – pot fi combinate pentru a realiza o interfață intuitivă chiar și fără un backend sau o bază de date persistentă.
 ---
 
 ## 1. Echipa
