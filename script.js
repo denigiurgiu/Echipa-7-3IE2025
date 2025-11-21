@@ -14,7 +14,7 @@ let movies = [
         year: 2008,
         genre: "Acțiune",
         rating: 9.0,
-        description: "Batman se confruntă cu Joker, un criminal genial care dorește să arunce Gotham în haos."
+        description: "Batman trebuie să înfrunte un criminal imprevizibil care vrea să transforme Gotham într-un loc al haosului, punând la încercare limitele eroismului său."
     },
     {
         id: 3,
@@ -170,3 +170,4 @@ genreFilterEl.addEventListener("change", applyFilters);
 
 // Inițializare
 applyFilters();
+
